@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Team Dolphin</title>
+    <meta name="keywords" content="和光大学,プログラミング,研究会,チーム,ドルフィン,Team,Dolphin">
+    <meta name="description" content="和光大学で唯一のプログラミングサークル『TeamDolphin』。メンバーの部屋です。">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="jquery.typist.js"></script>
+    <link rel="stylesheet" href="./css/member_style.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+   <header>
+    <div id="title">
+     <h1>Team Dolphin</h1>
+    </div>
+   </header>
+      <ul class="banna">
+	<li><a href = "./index.html"><img src="./icon/top.gif" border="0" width="157" height="50" alt="トップ"
+             onmouseover="this.src='./icon/top_o.gif';" onmouseout="this.src='./icon/top.gif'" /></a></li>
+	<li><a href = "./about.html"><img src="./icon/about.gif" border="0" width="157" height="50" alt="Team Dolphinとは？"
+             onmouseover="this.src='./icon/about_o.gif';" onmouseout="this.src='./icon/about.gif'" /></a></li>
+	<li><a href = "./results.html"><img src="./icon/results.gif" border="0" width="157" height="50" alt="活動実績"
+             onmouseover="this.src='./icon/results_o.gif';" onmouseout="this.src='./icon/results.gif'" /></a></li>
+	<li><a href = "./member.html"><img src="./icon/mem.gif" border="0" width="157" height="50" alt="メンバーの部屋"
+             onmouseover="this.src='./icon/mem_o.gif';" onmouseout="this.src='./icon/mem.gif'" /></a></li>
+	<li><a href = "http://blog.teamdolphin.net/" target="_blank"><img src="./icon/blog.gif" border="0" width="157" height="50" alt="ブログ"
+             onmouseover="this.src='./icon/blog_o.gif';" onmouseout="this.src='./icon/blog.gif'" /></a></li>
+	<li><a href = "./mail.php"><img src="./icon/mail.gif" border="0" width="157" height="50" alt="連絡先"
+             onmouseover="this.src='./icon/mail_o.gif';" onmouseout="this.src='./icon/mail.gif'" /></a></li>
+      </ul>
+   <section>
+    <div id ="terminal"></div>
+     <div id="sns">
+      <a class="twitter-timeline"  href="https://twitter.com/WakoTeamDolphin"  data-widget-id="319869623698849792">@WakoTeamDolphin からのツイート</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+     </div> <!-- sns -->
+
+    <div id = "question">
+     <h1>メンバーの部屋</h1>
+     
+<p class="explanation">
+ここでは、Team Dolphinメンバー全員への周知や、Team Dolphinメンバー全員が
+より快適に仕事ができるコンテンツなどを掲載していきます♪
+様々なpdfやプログラムの配信も行ったりしていきます。
+<br>もちろん、メンバーじゃない人の閲覧も自由ですよ。
+</p>
+     <h1>インフォメーション</h1>
+
+<p class="explanation">
+現在、周知やコンテンツなどはありません。<br>
+</p>
+    </div> <!-- question -->
+   </section>
+<script type="text/javascript">
+$(function() {
+    var console = $('#terminal').typist({
+        height: 300,
+        width: 960,
+    });
+ 
+    var play = function() {
+        console.html('');
+        console.typist('prompt')
+        .typist('wait','1400')
+        .typist('speed','slow')
+        .typist('type','touch teamdolphin.c')
+        console.typist('prompt')
+        .typist('type','vi teamdolphin.c')
+        .typist('echo','#include <stdio.h>')
+        .typist('echo','main() { ')
+        .typist('echo','　　printf("Welcome, TeamDolphin!");')
+        .typist('echo','　　return 0;')
+        .typist('echo','}')
+        .typist('echo','ZZ')
+        console.typist('prompt')
+        .typist('type','gcc teamdolphin.c')
+        console.typist('prompt')
+        .typist('type','./teamdolphin.out')
+        .typist('speed','fast')
+        .typist('echo','Welcome, TeamDolphin!')
+    };
+    play();
+});
+</script>
+  <footer>
+   <div id="copyright">
+    <p>Copyright (c) 2014  Team Dolphin All rights reserved.</p>
+   </div>
+  </footer>
+  </body>
+</html>
