@@ -53,9 +53,9 @@
       mb_language("Japanese");
       mb_internal_encoding("UTF-8");
 
-      $to = "info@teamdolphin.net";
+      $to = "fukazawa@teamdolphin.net";
       $mailfrom_name = mb_encode_mimeheader($name);
-      $mailfrom = 'From: '.$mailfrom_mail.'<'.$address.'>'."\n"; 
+      $mailfrom = 'From: '.$mailfrom_name.'<'.$address.'>'."\n"; 
 
       if(mb_send_mail($to,$subject,$body,$mailfrom)){
 	print "メールの送信が成功しました。<br>お問い合わせありがとうございました！</p>";

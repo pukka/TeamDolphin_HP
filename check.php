@@ -101,17 +101,17 @@
       <p class="body"><?=$body?></p>
      
      <form method="post" action="send.php" class="check">
-        <input type="hidden" name=name value="<?=$name?>">
-        <input type="hidden" name=address value="<?=$address?>">
-        <input type="hidden" name=subject value="<?=$subject?>">
-        <input type="hidden" name=body value="<?=$_POST['body']?>">
+        <input type="hidden" name="name" value="<?=$name?>">
+        <input type="hidden" name="address" value="<?=$address?>">
+        <input type="hidden" name="subject" value="<?=$subject?>">
+        <input type="hidden" name="body" value="<?=$_POST['body']?>">
         <input type="submit" value="送信する" style="width:110px; height:40px; font-size:20px;"><br>
      </form>
      <form method="post" action="mail.php" class="check">
-        <input type="hidden" name=name value="<?=$name?>">
-        <input type="hidden" name=address value="<?=$address?>">
-        <input type="hidden" name=subject value="<?=$subject?>">
-        <input type="hidden" name=body value="<?=$_POST['body']?>">
+        <input type="hidden" name="name" value="<?=$name?>">
+        <input type="hidden" name="address" value="<?=$address?>">
+        <input type="hidden" name="subject" value="<?=$subject?>">
+        <input type="hidden" name="body" value="<?=$_POST['body']?>">
         <input type="submit" value="修正する" style="width:110px; height:40px; font-size:20px;"><br>
      </form>
     <?php } ?>
